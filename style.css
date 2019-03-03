@@ -123,6 +123,12 @@ h1.authorName{
   h2.workAuthor{
     padding-top: 0;
   }
+  #header{
+    margin: 0 0 2em 0;
+  }
+  p.workBody{
+    margin: 0;
+  }
 
 
 }
