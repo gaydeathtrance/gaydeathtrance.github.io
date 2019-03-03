@@ -29,6 +29,19 @@ a, a:visited{
 
 a:hover, a:active{
   color: #680015;
+  -webkit-animation: flash linear 0.5s infinite;
+	animation: flash linear 0.5s infinite;
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
 }
 
 .logo{
@@ -201,6 +214,11 @@ h1.Archive{
 
 .mainImg:hover, .boxImg:hover{
   opacity: 0.8;
+  -webkit-animation: none;
+}
+
+a.noFlash:hover {
+    animation: none;
 }
 
 
