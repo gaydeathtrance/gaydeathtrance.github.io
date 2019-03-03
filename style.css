@@ -10,6 +10,7 @@ html, body{
   background-color: #fffefe;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 a, a:visited{
@@ -136,6 +137,16 @@ h1.authorName{
   padding: 1em;
   margin: 0;
   float: right;
+}
+
+#header .fab{
+  margin-top: 0.2em;
+  color: #aaa;
+}
+
+#header .fab:hover{
+  margin-top: 0.2em;
+  color: #111;
 }
 
 p.imgCredit{
