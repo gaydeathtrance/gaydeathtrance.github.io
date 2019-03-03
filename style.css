@@ -36,7 +36,7 @@ h1.comingSoon{
 
 .featuredContent{
   margin: 2em 15em 10em 15em;
-  text-align: justify;
+  text-align: center;
 }
 
 .featuredContent h2{
@@ -105,6 +105,10 @@ h1.authorName{
 
 .workImage{
   width: 100%;
+}
+
+.mainImg{
+  width: 75%;
 }
 
 #header{
