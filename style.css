@@ -7,7 +7,7 @@
 }
 
 html, body{
-  background-color: #fcfeff;
+  background-color: #fffefe;
   margin: 0;
   padding: 0;
 }
@@ -46,7 +46,7 @@ p.authorBio{
 
 .holder{
   width: 45vw;
-  margin: 30vh auto;
+  margin: 30vh auto 25vw auto;
 }
 
 
@@ -138,6 +138,9 @@ p.aboutUs{
   }
   p.imgCredit{
     padding-top: 2em;
+  }
+  .holder{
+    width: 85vw;
   }
 
 
