@@ -2,8 +2,18 @@
 
 * {
   font-family: 'Crimson Text', serif;
+  font-size: 14pt;
+  color: #111;
 }
 
 html, body{
   background-color: #FFFFFC;
+}
+
+
+h1.comingSoon{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  padding-top: 3em;
 }
