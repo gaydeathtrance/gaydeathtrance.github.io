@@ -29,6 +29,35 @@ h1.comingSoon{
   padding-top: 3em;
 }
 
+.mainContent{
+  margin: 5em;
+  text-align: justify;
+}
+
+.featuredContent{
+  margin: 2em 15em 10em 15em;
+  text-align: justify;
+}
+
+.featuredContent h2{
+  font-size: 1.8em;
+}
+
+.featuredContent h3{
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+
+.mainContent h2{
+  font-size: 1.2em;
+}
+
+.mainContent h3{
+  font-size: 1em;
+  font-weight: lighter;
+}
+
 
 .work{
   width: 55vw;
@@ -115,6 +144,22 @@ p.aboutUs{
   margin: 2em;
 }
 
+.workBox{
+  width: 30vw;
+  display: inline-block;
+  margin: 2em;
+}
+
+.boxImg{
+  width: 100%;
+}
+
+h1.Archive{
+  font-size: 2em;
+}
+
+
+
 
 @media only screen and (max-device-width: 480px) {
 
@@ -142,6 +187,19 @@ p.aboutUs{
   .holder{
     width: 85vw;
   }
+  .mainContent{
+    margin: 2em 1em;
+  }
+  .featuredContent{
+    margin: 2em 1em 5em 1em;
+    text-align: left;
+  }
+  .workBox{
+    width: calc(100vw - 6em);
+    display: inline-block;
+    margin: 2em;
+  }
+
 
 
 }
