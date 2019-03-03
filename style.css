@@ -199,6 +199,9 @@ h1.Archive{
   font-size: 3em;
 }
 
+.mainImg:hover, .boxImg:hover{
+  opacity: 0.8;
+}
 
 
 @media only screen and (max-device-width: 480px) {
@@ -260,6 +263,7 @@ h1.Archive{
   .logo{
     font-size: 5em;
   }
+
 
 
 
