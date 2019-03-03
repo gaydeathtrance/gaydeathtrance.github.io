@@ -2,12 +2,22 @@
 
 * {
   font-family: 'Crimson Text', serif;
-  font-size: 14pt;
+  font-size: 12pt;
   color: #111;
 }
 
 html, body{
-  background-color: #FFFFFC;
+  background-color: #fcfeff;
+  margin: 0;
+}
+
+a, a:visited{
+  text-decoration: none;
+  font-size: inherit;
+}
+
+a:hover, a:active{
+  color: #680015;
 }
 
 
@@ -16,4 +26,39 @@ h1.comingSoon{
   font-weight: bold;
   font-size: 2em;
   padding-top: 3em;
+}
+
+
+.work{
+  width: 45vw;
+  margin: 2em auto;
+}
+
+h1.workTitle{
+  font-size: 1.5em
+}
+
+h2.workAuthor{
+  font-size: 1.2em
+}
+
+p.workBody{
+  margin: 2em 0;
+  font-weight: lighter;
+}
+
+h1.authorName{
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+  .work{
+    width: calc(100vw - 2em);
+    margin: 1em;
+  }
+
+
 }
