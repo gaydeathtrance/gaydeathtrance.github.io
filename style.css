@@ -30,12 +30,12 @@ h1.comingSoon{
 }
 
 .mainContent{
-  margin: 5em;
+  margin: 5em 8vw;
   text-align: justify;
 }
 
 .featuredContent{
-  margin: 2em 15em 10em 15em;
+  margin: 2em 17vw 10em 17vw;
   text-align: center;
 }
 
@@ -158,10 +158,16 @@ p.aboutUs{
   width: 100%;
 }
 
-h1.Archive{
+
+h1.Archive, h1.Latest{
+  text-align: left;
+  margin-left: 8vw;
   font-size: 2em;
 }
 
+h1.Latest{
+  margin-bottom: 1.5em;
+}
 
 
 
@@ -196,13 +202,31 @@ h1.Archive{
   }
   .featuredContent{
     margin: 2em 1em 5em 1em;
-    text-align: left;
+    text-align: center;
   }
   .workBox{
-    width: calc(100vw - 6em);
+    width: calc(100vw - 4em);
     display: inline-block;
-    margin: 2em;
+    margin: 1em;
   }
+  .mainImg{
+    width: 90%;
+  }
+  .featuredContent h2{
+    font-size: 1.4em;
+  }
+
+  .featuredContent h3{
+    font-size: 1.1em;
+    font-weight: lighter;
+  }
+  h1.Latest{
+    margin-bottom: 0em;
+  }
+  h1.Archive{
+    margin-bottom: -0.5em;
+  }
+
 
 
 
