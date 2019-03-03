@@ -55,17 +55,15 @@ p.authorBio{
 }
 
 h1.workTitle{
-  font-size: 1.5em
+  font-size: 2em
 }
 
 h2.workAuthor{
   font-size: 1.2em;
   margin: 0.5em 0;
   text-align: left;
-  padding-top: 2em;
   padding-bottom: 2em;
   font-weight: lighter;
-  text-align: right;
 }
 
 
@@ -114,7 +112,7 @@ h1.authorName{
 p.imgCredit{
   text-align: right;
   font-size: 0.8em;
-  margin-top: 0.2em;
+  margin-top: 0.1em;
 }
 
 
