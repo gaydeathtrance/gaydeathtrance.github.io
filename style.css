@@ -46,13 +46,9 @@ p.authorBio{
 
 .holder{
   width: 45vw;
-  margin: 25vh auto;
+  margin: 30vh auto;
 }
 
-.holder h1{
-  font-weight: bold;
-  padding-bottom: 1em;
-}
 
 h1.workTitle{
   font-size: 2em
@@ -115,6 +111,10 @@ p.imgCredit{
   margin-top: 0.1em;
 }
 
+p.aboutUs{
+  margin: 2em;
+}
+
 
 @media only screen and (max-device-width: 480px) {
 
@@ -135,6 +135,9 @@ p.imgCredit{
   }
   p.workBody{
     margin: 0;
+  }
+  p.imgCredit{
+    padding-top: 2em;
   }
 
 
