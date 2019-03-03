@@ -237,7 +237,7 @@ a.noFlash:hover {
   width: calc(30vw - 3em);
   padding: 0em;
   margin-top: 1em;
-  height: 400px;
+  height: auto;
 
   font-weight: bold;
   text-align: left;

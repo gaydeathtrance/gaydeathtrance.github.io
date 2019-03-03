@@ -82,7 +82,14 @@
   </li>
   </ul>
 
+<script type="text/javascript">
+var maxheight = 0;
+$('div div.y').each(function () {
+  maxheight = ($(this).height() > maxheight ? $(this).height() : maxheight);
+});
 
+$('div div.y').height(maxheight);
+</script>
 
   </body>
 </html>
