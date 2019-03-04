@@ -28,7 +28,7 @@ a, a:visited{
 }
 
 a:hover, a:active{
-  color: #2c0202;
+  color: #111;
   -webkit-animation: flash linear 0.17s infinite;
 	animation: flash linear 0.17s infinite;
 }
