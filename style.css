@@ -71,7 +71,7 @@ a:hover, a:active{
 .tagLine{
     color: #fffefe;
     font-size: 1.6em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: none;
 }
 
