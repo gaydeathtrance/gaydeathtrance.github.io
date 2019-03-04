@@ -118,17 +118,19 @@ p.authorBio{
 }
 
 .featuredContent{
-  margin: 2em 17vw 10em 17vw;
+  margin: 6em 17vw 10em 17vw;
   text-align: center;
 }
 
 .featuredContent h2{
   font-size: 1.8em;
+  margin-bottom: 0.4em;
 }
 
 .featuredContent h3{
   font-size: 1.2em;
   font-weight: lighter;
+  margin-top: 0;
 }
 
 h1.workTitle{
@@ -287,6 +289,13 @@ a.noFlash:hover {
   padding: 0.5em;
 }
 
+.flex-container h2{
+  margin-bottom: 0.2em;
+}
+.flex-container h3{
+  margin-top: 0;
+}
+
 
 @media only screen and (max-device-width: 1000px) {
   .logo{
@@ -325,7 +334,7 @@ a.noFlash:hover {
   }
 
   .featuredContent{
-    margin: 2em 1em 5em 1em;
+    margin: 4em 1em 5em 1em;
     text-align: center;
   }
 
