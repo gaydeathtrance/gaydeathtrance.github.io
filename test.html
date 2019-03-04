@@ -35,11 +35,22 @@
   <meta name="twitter:title" content="Gay Death Trance" />
   <meta name="twitter:site" content="@gaydeathtrance" />
   <meta name="twitter:image" content="http://gaydeathtrance.net/images/icon.png" />
+  <style media="screen">
+    #header{
+        display: none;
+    }
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
   <body>
+
+    <div id="headerTop">
+      <a class="homeLink" href="../index.html">Gay Death Trance</a>
+      <a class="link" href="https://twitter.com/gaydeathtrance" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="link" href="../about.html">About</a>
+    </div>
 
     <div id="header">
       <a class="homeLink" href="../index.html">Gay Death Trance</a>
@@ -47,9 +58,14 @@
       <a class="link" href="../about.html">About</a>
     </div>
 
-    <div class="logoHolder">
-      <span class="logo">Gay Death Trance<span>
+    <div class="splash">
+      <div class="logoHolder">
+        <span class="logo">Gay Death Trance</span><br>
+        <span class="tagLine">Here's a sentence that could appear?</span>
+      </div>
     </div>
+
+
 
     <div class="featuredContent">
         <a class="noFlash" href="BBDB/1.html"><img class="mainImg" src="images/test.jpg" alt=""></a>
@@ -104,6 +120,31 @@ $('div div.y').each(function () {
 });
 
 $('div div.y').height(maxheight);
+
+var header = $("#header");
+var headerTop = $("#headerTop");
+$(window).scroll(function(){
+  if($(window).scrollTop() >= 130 ){
+       header.show();
+       headerTop.hide();
+  } else {
+     header.hide();
+     headerTop.show();
+  }
+});
+setTimeout(function() {
+ $(".logo").fadeTo(2000,1);
+}, 100);
+
+if ( $(window).width() > 739) {
+  setTimeout(function() {
+  $(".tagLine").fadeTo(3000,1);
+  }, 1500);
+        }
+else{
+  $(".tagLine").hide();
+}
+
 </script>
 
   </body>
