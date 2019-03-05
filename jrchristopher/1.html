@@ -136,13 +136,21 @@
         });
     }
 
-    $(document).ready(function(){
-        animateWork('.workTitle, .workAuthor');
-    });
-
-    $(document).ready(function(){
-      setTimeout(function(){ animateImage('.workImage');}, 650);
-    });
+    if($(window).scrollTop() >= 300 ){
+         $('.workTitle').css("opacity", "1");
+         $('.workAuthor').css("opacity", "1");
+         $('.workImage').css("opacity", "1");
+         $('.workTitle').css("padding-top", "0px");
+         $('.workAuthor').css("padding-top", "0px");
+         $('.workImage').css("padding-top", "0px");
+    } else {
+      $(document).ready(function(){
+          animateWork('.workTitle, .workAuthor');
+      });
+      $(document).ready(function(){
+        setTimeout(function(){ animateImage('.workImage');}, 650);
+      });
+    }
     </script>
 
   </body>
