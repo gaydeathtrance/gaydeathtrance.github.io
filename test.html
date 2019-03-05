@@ -60,7 +60,7 @@
 
     <div class="splash">
       <div class="logoHolder">
-        <span class="logo">Gay Death Trance</span><br>
+        <div class="logo">Gay Death Trance</div><br>
         <!-- Change the line below to change the line that appears at the top of the page -->
         <span class="tagLine">There’s a fine line between “liberated” and “dead inside."</span>
       </div>
@@ -93,8 +93,8 @@
 
   <li class="flex-item">
     <a class="noFlash" href="AUTHOR/number.html"><img class="boxImg" src="images/imagename.jpg"></a>
-    <h2><a href="author/number.html">WORK TITLE</a></h2>
-    <h3>by <a href="author/index.html">AUTHOR NAME</a></h3>
+    <h2 class="archiveTitle"><a href="author/number.html">WORK TITLE</a></h2>
+    <h3 class="archiveAuthor">by <a href="author/index.html">AUTHOR NAME</a></h3>
   </li>
 
   STOP COPYING
@@ -104,20 +104,13 @@
   <ul class="flex-container">
     <li class="flex-item">
       <a class="noFlash" href="kilpatrick/1.html"><img class="boxImg" src="images/nomorewe.jpg"></a>
-      <h2><a href="kilpatrick/1.html">no more we</a></h2>
-      <h3>by <a href="kilpatrick/index.html">Sean Kilpatrick</a></h3>
+      <h2 class="archiveTitle"><a href="kilpatrick/1.html">no more we</a></h2>
+      <h3 class="archiveAuthor">by <a href="kilpatrick/index.html">Sean Kilpatrick</a></h3>
     </li>
 
   </ul>
 
 <script type="text/javascript">
-var maxheight = 0;
-$('div div.y').each(function () {
-  maxheight = ($(this).height() > maxheight ? $(this).height() : maxheight);
-});
-
-$('div div.y').height(maxheight);
-
 var header = $("#header");
 var headerTop = $("#headerTop");
 $(window).scroll(function(){
@@ -130,17 +123,42 @@ $(window).scroll(function(){
   }
 });
 setTimeout(function() {
- $(".logo").fadeTo(2000,1);
+ $('.logo').fadeTo(2000,1).animate({
+            'padding-top': '-=25px'
+          }, {duration: 1000, queue: false}, function() {
+        });
 }, 100);
 
 if ( $(window).width() > 739) {
   setTimeout(function() {
-  $(".tagLine").fadeTo(3000,1);
-  }, 1500);
+  $(".tagLine").fadeTo(2500,1);
+}, 1000);
         }
 else{
   $(".tagLine").hide();
 }
+
+function showImages(el) {
+    var windowHeight = jQuery( window ).height();
+    $(el).each(function(){
+        var thisPos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (topOfWindow + windowHeight - 200 > thisPos ) {
+            $(this).animate({opacity : 1}, 1200);
+        }
+    });
+}
+
+$(document).ready(function(){
+    showImages('.boxImg, .mainImg');
+    // showImages('.mainImg');
+});
+
+$(window).scroll(function() {
+  showImages('.boxImg, .mainImg');
+});
+
 
 </script>
 

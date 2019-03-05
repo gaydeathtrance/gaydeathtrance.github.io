@@ -52,6 +52,15 @@ a:hover, a:active{
   100% { opacity: 0; }
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 .splash{
   min-height: 100vh;
@@ -66,6 +75,7 @@ a:hover, a:active{
   color: #fffefe;
   font-weight: normal;
   display: none;
+  padding-top: 25px;
 }
 
 .tagLine{
@@ -102,6 +112,7 @@ h1.comingSoon{
 .work{
   width: 55vw;
   margin: 2em auto;
+  animation: fadein 2s;
 }
 
 .bioHolder{
@@ -165,6 +176,7 @@ h1.authorName{
 .mainImg{
   max-width: 75%;
   max-height: 35vw;
+  opacity: 0;
 }
 
 .spacer{
@@ -247,8 +259,11 @@ p.aboutUs{
 
 .boxImg{
   width: 100%;
+  opacity: 0;
 }
-
+/* h2.archiveTitle {
+  display: none;
+} */
 
 h1.Archive{
   text-align: left;
@@ -257,7 +272,7 @@ h1.Archive{
 }
 
 .mainImg:hover, .boxImg:hover{
-  opacity: 0.8;
+  opacity: 0.8!important;
   -webkit-animation: none;
 }
 
@@ -268,7 +283,7 @@ a.noFlash:hover {
 
 .flex-container {
   padding: 0;
-  margin: 5em;
+  margin: 2em 5em;
   list-style: none;
 
   display: -webkit-box;
@@ -291,6 +306,8 @@ a.noFlash:hover {
   text-align: left;
   padding: 0.5em;
 }
+
+
 
 .flex-container h2{
   margin-bottom: 0.2em;
