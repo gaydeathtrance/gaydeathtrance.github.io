@@ -132,6 +132,8 @@ p.authorBio{
 .featuredContent{
   margin: 6em 17vw 10em 17vw;
   text-align: center;
+  padding-top: 25px;
+  opacity: 0;
 }
 
 .featuredContent h2{
@@ -176,7 +178,6 @@ h1.authorName{
 .mainImg{
   max-width: 75%;
   max-height: 35vw;
-  opacity: 0;
 }
 
 .spacer{

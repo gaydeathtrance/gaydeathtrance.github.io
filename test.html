@@ -140,20 +140,22 @@ function showImages(el) {
         var thisPos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
         if (topOfWindow + windowHeight - 10 > thisPos ) {
-            $(this).animate({opacity : 1}, 1000);
+            // $(this).animate({opacity : 1}, 1000);
+            $(this).fadeTo(1000,1).animate({
+                       'padding-top': '-=25px'
+                     }, {duration: 700, queue: false}, function() {
+                   });
         }
     });
 }
 
 $(document).ready(function(){
-    showImages('.boxImg, .mainImg');
+    showImages('.boxImg, .featuredContent');
 });
 
 $(window).scroll(function() {
-  showImages('.boxImg, .mainImg');
+  showImages('.boxImg, .featuredContent');
 });
-
-
 </script>
 
   </body>
