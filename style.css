@@ -115,7 +115,6 @@ h1.comingSoon{
 .work{
   width: 55vw;
   margin: 2em auto;
-  animation: fadein 2s;
 }
 
 .bioHolder{
@@ -151,7 +150,9 @@ p.authorBio{
 }
 
 h1.workTitle{
-  font-size: 2em
+  font-size: 2em;
+  opacity: 0;
+  padding-top: 50px;
 }
 
 h2.workAuthor{
@@ -160,6 +161,8 @@ h2.workAuthor{
   text-align: left;
   padding-bottom: 2em;
   font-weight: lighter;
+  opacity: 0;
+  padding-top: 50px;
 }
 
 
@@ -176,6 +179,9 @@ h1.authorName{
 
 .workImage{
   width: 100%;
+  opacity: 0;
+  padding-top: 400px;
+  display: block;
 }
 
 .mainImg{

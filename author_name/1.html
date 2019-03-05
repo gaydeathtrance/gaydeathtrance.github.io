@@ -95,5 +95,45 @@
     <p class="imgCredit">Artwork: "Picture Title" by Artist</p>
     </div>
 
+    <script>
+    function animateWork(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 10 > thisPos ) {
+                // $(this).animate({opacity : 1}, 1000);
+                $(this).fadeTo(1000,1).animate({
+                           'padding-top': '-=50px'
+                         }, {duration: 700, queue: false}, function() {
+                       });
+            }
+        });
+    }
+
+    function animateImage(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 10 > thisPos ) {
+                // $(this).animate({opacity : 1}, 1000);
+                $(this).fadeTo(100,1).animate({
+                           'padding-top': '-=400px'
+                         }, {duration: 700, queue: false}, function() {
+                       });
+            }
+        });
+    }
+
+    $(document).ready(function(){
+        animateWork('.workTitle, .workAuthor');
+    });
+
+    $(document).ready(function(){
+      setTimeout(function(){ animateImage('.workImage');}, 300);
+    });
+    </script>
+
   </body>
 </html>
