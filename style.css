@@ -327,7 +327,13 @@ a.noFlash:hover {
 }
 
 @media only screen and (max-device-width: 500px) {
-
+  .logo{
+    font-size: 8em;
+  }
+  .tagLine{
+    font-size: 1.3em;
+    padding: 1em;
+  }
   .work{
     width: calc(100vw - 2em);
     margin: 1em;
@@ -393,9 +399,10 @@ a.noFlash:hover {
     padding-top: 20vh;
   }
 
+}
 
-
-
-
-
+@media only screen and (max-device-width: 320px) {
+  .logo{
+    font-size: 7em;
+  }
 }

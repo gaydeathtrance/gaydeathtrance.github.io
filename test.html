@@ -62,7 +62,7 @@
       <div class="logoHolder">
         <div class="logo">Gay Death Trance</div><br>
         <!-- Change the line below to change the line that appears at the top of the page -->
-        <span class="tagLine">There’s a fine line between “liberated” and “dead inside."</span>
+        <div class="tagLine">There’s a fine line between “liberated” and “dead inside."</div>
       </div>
     </div>
 
@@ -129,30 +129,24 @@ setTimeout(function() {
         });
 }, 100);
 
-if ( $(window).width() > 739) {
-  setTimeout(function() {
+setTimeout(function() {
   $(".tagLine").fadeTo(2500,1);
 }, 1000);
-        }
-else{
-  $(".tagLine").hide();
-}
+
 
 function showImages(el) {
     var windowHeight = jQuery( window ).height();
     $(el).each(function(){
         var thisPos = $(this).offset().top;
-
         var topOfWindow = $(window).scrollTop();
-        if (topOfWindow + windowHeight - 200 > thisPos ) {
-            $(this).animate({opacity : 1}, 1200);
+        if (topOfWindow + windowHeight - 10 > thisPos ) {
+            $(this).animate({opacity : 1}, 1000);
         }
     });
 }
 
 $(document).ready(function(){
     showImages('.boxImg, .mainImg');
-    // showImages('.mainImg');
 });
 
 $(window).scroll(function() {
