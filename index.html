@@ -59,20 +59,13 @@
 
     <div class="splash">
       <div class="logoHolder">
-        <span class="logo">Gay Death Trance</span><br>
+        <div class="logo">Gay Death Trance</div><br>
         <!-- Change the line below to change the line that appears at the top of the page -->
-        <span class="tagLine">Coming Soon</span>
+        <div class="tagLine">Coming Soon</div>
       </div>
     </div>
 
     <script type="text/javascript">
-    var maxheight = 0;
-    $('div div.y').each(function () {
-      maxheight = ($(this).height() > maxheight ? $(this).height() : maxheight);
-    });
-
-    $('div div.y').height(maxheight);
-
     var header = $("#header");
     var headerTop = $("#headerTop");
     $(window).scroll(function(){
