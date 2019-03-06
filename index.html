@@ -6,8 +6,6 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-  <title>Gay Death Trance</title>
-
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -22,6 +20,8 @@
   <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 
+  <title>Gay Death Trance</title>
+
   <meta name="description" content="" />
   <link rel="canonical" href="http://gaydeathtrance.net" />
   <meta property="og:type" content="website" />
@@ -35,60 +35,144 @@
   <meta name="twitter:title" content="Gay Death Trance" />
   <meta name="twitter:site" content="@gaydeathtrance" />
   <meta name="twitter:image" content="http://gaydeathtrance.net/images/icon.png" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <style media="screen">
     #header{
         display: none;
     }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
   <body>
 
     <div id="headerTop">
-      <a class="homeLink" href="index.html">Gay Death Trance</a>
+      <a class="homeLink" href="../index.html">Gay Death Trance</a>
       <a class="link" href="https://twitter.com/gaydeathtrance" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a class="link" href="about.html">About</a>
+      <a class="link" href="../about.html">About</a>
     </div>
 
     <div id="header">
-      <a class="homeLink" href="index.html">Gay Death Trance</a>
+      <a class="homeLink" href="../index.html">Gay Death Trance</a>
       <a class="link noFlash" href="https://twitter.com/gaydeathtrance" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a class="link" href="about.html">About</a>
+      <a class="link" href="../about.html">About</a>
     </div>
 
     <div class="splash">
       <div class="logoHolder">
         <div class="logo">Gay Death Trance</div><br>
         <!-- Change the line below to change the line that appears at the top of the page -->
-        <div class="tagLine">Coming Soon</div>
+        <div class="tagLine">There’s a fine line between “liberated” and “dead inside."</div>
       </div>
     </div>
 
-    <script type="text/javascript">
-    var header = $("#header");
-    var headerTop = $("#headerTop");
-    $(window).scroll(function(){
-      if($(window).scrollTop() >= 130 ){
-           header.show();
-           headerTop.hide();
-      } else {
-         header.hide();
-         headerTop.show();
-      }
+
+    <!-- This is for the most recent content, change the info whenever you pub something new  -->
+    <div class="featuredContent">
+        <!-- In this line replace the href="author/number.html" and src="images/imagename.png" -->
+        <a class="noFlash" href="jrchristopher/1.html"><img class="mainImg" src="images/spoonbill.jpg" alt=""></a>
+
+        <!-- In this line replace the href="author/number.html" replace the title with the new title -->
+        <h2><a href="jrchristopher/1.html">Forms of Rot</a></h2>
+
+        <!-- In this line replace the href="author/index.html", replace the name with the new name -->
+        <h3>by <a href="jrchristopher/index.html">J. R. Christopher</a></h3>
+    </div>
+
+
+
+
+
+  <!-- This is for the archive. To add a new post to the archive copy the below text from
+  <li> to </li>
+
+  then replace each piece, like you did for the part above.
+
+
+  COPY THE BELOW LINES
+
+  <li class="flex-item">
+    <a class="noFlash" href="AUTHOR/number.html"><img class="boxImg" src="images/imagename.jpg"></a>
+    <h2 class="archiveTitle"><a href="author/number.html">WORK TITLE</a></h2>
+    <h3 class="archiveAuthor">by <a href="author/index.html">AUTHOR NAME</a></h3>
+  </li>
+
+  STOP COPYING
+
+   -->
+  <div class="archiveWrapper">
+  <h1 class="Archive">Archive</h1>
+  <ul class="flex-container">
+
+    <li class="flex-item">
+      <a class="noFlash" href="shywatson/1.html"><img class="boxImg" src="images/geode.jpg"></a>
+      <h2 class="archiveTitle"><a href="shywatson/1.html">HUNGRY KID NEEDS MONEY FROM PIGGY BANK (or: BORED KID NEEDS GEODE FROM ROCK)</a></h2>
+      <h3 class="archiveAuthor">by <a href="shywatson/index.html">Shy Watson</a></h3>
+    </li>
+
+
+    <li class="flex-item">
+      <a class="noFlash" href="kilpatrick/1.html"><img class="boxImg" src="images/nomorewe.jpg"></a>
+      <h2 class="archiveTitle"><a href="kilpatrick/1.html">no more we</a></h2>
+      <h3 class="archiveAuthor">by <a href="kilpatrick/index.html">Sean Kilpatrick</a></h3>
+    </li>
+
+    <li class="flex-item">
+      <a class="noFlash" href="BBDB/1.html"><img class="boxImg" src="images/slab.jpg"></a>
+      <h2 class="archiveTitle"><a href="BBDB/1.html">SLAB I</a></h2>
+      <h3 class="archiveAuthor">by <a href="BBDB/index.html">Big Bruiser Dope Boy</a></h3>
+    </li>
+
+  </ul>
+  </div>
+
+<script type="text/javascript">
+var header = $("#header");
+var headerTop = $("#headerTop");
+$(window).scroll(function(){
+  if($(window).scrollTop() >= 130 ){
+       header.show();
+       headerTop.hide();
+  } else {
+     header.hide();
+     headerTop.show();
+  }
+});
+setTimeout(function() {
+ $('.logo').fadeTo(2000,1).animate({
+            'padding-top': '-=25px'
+          }, {duration: 1000, queue: false}, function() {
+        });
+}, 100);
+
+setTimeout(function() {
+  $(".tagLine").fadeTo(2500,1);
+}, 1000);
+
+
+function showImages(el) {
+    var windowHeight = jQuery( window ).height();
+    $(el).each(function(){
+        var thisPos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (topOfWindow + windowHeight - 10 > thisPos ) {
+            // $(this).animate({opacity : 1}, 1000);
+            $(this).fadeTo(1000,1).animate({
+                       'padding-top': '-=25px'
+                     }, {duration: 700, queue: false}, function() {
+                   });
+        }
     });
-    setTimeout(function() {
-     $('.logo').fadeTo(2000,1).animate({
-                'padding-top': '-=25px'
-              }, {duration: 1000, queue: false}, function() {
-            });
-    }, 100);
+}
 
-    setTimeout(function() {
-      $(".tagLine").fadeTo(2500,1);
-    }, 1000);
+$(document).ready(function(){
+    showImages('.boxImg, .featuredContent');
+});
 
-    </script>
+$(window).scroll(function() {
+  showImages('.boxImg, .featuredContent');
+});
+</script>
 
   </body>
 </html>
