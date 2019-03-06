@@ -124,6 +124,12 @@
       $(document).ready(function(){
         setTimeout(function(){ animateImage('.workImage');}, 650);
       });
+      $(document).scroll(function(){
+          animateWork('.workTitle, .workAuthor');
+      });
+      $(document).scroll(function(){
+        setTimeout(function(){ animateImage('.workImage');}, 0);
+      });
     }
 
     </script>
