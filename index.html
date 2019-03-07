@@ -131,37 +131,36 @@
   </div>
 
 <script type="text/javascript">
+
 var header = $("#header");
 var headerTop = $("#headerTop");
 
 if ( $(window).width() > 739) {
-  $(window).scroll(function(){
-    if($(window).scrollTop() >= 130 ){
-         header.fadeTo(300,1);
-         headerTop.hide();
-         $(".scrollDown").fadeTo(300,0);
-    } else {
-       header.hide();
-       headerTop.show();
-    }
+$(window).scroll(function(){
+  if($(window).scrollTop() >= 130 ){
+       header.fadeTo(300,1);
+       headerTop.hide();
+       $(".scrollDown").fadeTo(300,0);
+       }
+  else {
+     header.hide();
+     headerTop.show();
+     }
   });
-  }
+}
 else {
-  $(window).scroll(function(){
-    if($(window).scrollTop() >= 80 ){
-         header.fadeTo(300,1);
-         headerTop.hide();
-         $(".scrollDown").fadeTo(200,0);
-    } else {
-       header.hide();
-       headerTop.show();
-    }
-  });
+$(window).scroll(function(){
+  if($(window).scrollTop() >= 80 ){
+       header.fadeTo(300,1);
+       headerTop.hide();
+       $(".scrollDown").fadeTo(300,0);
   }
-
-
-
-
+  else {
+     header.hide();
+     headerTop.show();
+     }
+  });
+}
 
 setTimeout(function() {
  $('.logo').fadeTo(2000,1).animate({
@@ -175,7 +174,9 @@ setTimeout(function() {
 }, 1000);
 
 setTimeout(function() {
+  if($('.splash').outerHeight() <= $(window).height()){
   $(".scrollDown").fadeTo(800,1);
+  }
 }, 2500);
 
 
