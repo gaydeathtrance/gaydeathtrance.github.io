@@ -246,7 +246,17 @@ h1.authorName{
 
 
 
+.scrollDown{
+  text-align: center;
+  position: relative;
+  bottom: 2em;
+  display: none;
+}
 
+.scrollDown .fas{
+    color: #fffefe;
+    font-size: 1.2em;
+}
 
 
 
@@ -412,6 +422,12 @@ a.noFlash:hover {
   }
   .logoHolder{
     padding-top: 20vh;
+  }
+  .scrollDown{
+    position: fixed;
+    width: 100vw;
+    bottom: 2em;
+    display: none;
   }
 
 }
