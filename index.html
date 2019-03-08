@@ -64,6 +64,10 @@
         <!-- Change the line below to change the line that appears at the top of the page -->
         <div class="tagLine">There’s a fine line between liberated and dead inside.</div>
       </div>
+
+      <div class="scrollDown">
+        <a onclick="seeMore()" href="javascript:void(0);"><i class="fas fa-chevron-down"></i></a>
+      </div>
     </div>
 
 
@@ -127,17 +131,37 @@
   </div>
 
 <script type="text/javascript">
+
 var header = $("#header");
 var headerTop = $("#headerTop");
+
+if ( $(window).width() > 739) {
 $(window).scroll(function(){
   if($(window).scrollTop() >= 130 ){
-       header.show();
+       header.fadeTo(300,1);
        headerTop.hide();
-  } else {
+       $(".scrollDown").fadeTo(300,0);
+       }
+  else {
      header.hide();
      headerTop.show();
+     }
+  });
+}
+else {
+$(window).scroll(function(){
+  if($(window).scrollTop() >= 80 ){
+       header.fadeTo(300,1);
+       headerTop.hide();
+       $(".scrollDown").fadeTo(300,0);
   }
-});
+  else {
+     header.hide();
+     headerTop.show();
+     }
+  });
+}
+
 setTimeout(function() {
  $('.logo').fadeTo(2000,1).animate({
             'padding-top': '-=25px'
@@ -148,6 +172,12 @@ setTimeout(function() {
 setTimeout(function() {
   $(".tagLine").fadeTo(2500,1);
 }, 1000);
+
+setTimeout(function() {
+  if($('.splash').outerHeight() <= $(window).height()){
+  $(".scrollDown").fadeTo(800,1);
+  }
+}, 2500);
 
 
 function showImages(el) {
@@ -172,6 +202,13 @@ $(document).ready(function(){
 $(window).scroll(function() {
   showImages('.boxImg, .featuredContent');
 });
+
+function seeMore(){
+  $('html, body').animate({scrollTop:$(".splash")[0].scrollHeight - 35}, 1300);
+  $('.featuredContent').css('padding-top', '0');
+}
+
+
 </script>
 
   </body>
