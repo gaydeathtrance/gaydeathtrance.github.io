@@ -77,15 +77,16 @@ a:hover, a:active{
   text-transform: uppercase;
   color: #fffefe;
   font-weight: normal;
-  display: none;
-  padding-top: 25px;
+  /* display: none; */
+  /* padding-top: 25px; */
+  padding-top: 0;
 }
 
 .tagLine{
     color: #fffefe;
     font-size: 1.6em;
     /* text-transform: uppercase; */
-    display: none;
+    /* display: none; */
 }
 
 .logoHolder{
@@ -134,8 +135,8 @@ p.authorBio{
 .featuredContent{
   margin: 6em 17vw 6em 17vw;
   text-align: center;
-  padding-top: 25px;
-  opacity: 0;
+  /* padding-top: 25px;
+  opacity: 0; */
 }
 
 .featuredContent h2{
@@ -151,8 +152,8 @@ p.authorBio{
 
 h1.workTitle{
   font-size: 2em;
-  opacity: 0;
-  padding-top: 50px;
+  /* opacity: 0;
+  padding-top: 50px; */
 }
 
 h2.workAuthor{
@@ -161,8 +162,8 @@ h2.workAuthor{
   text-align: left;
   padding-bottom: 2em;
   font-weight: lighter;
-  opacity: 0;
-  padding-top: 50px;
+  /* opacity: 0;
+  padding-top: 50px; */
 }
 
 
@@ -179,8 +180,8 @@ h1.authorName{
 
 .workImage{
   width: 100%;
-  opacity: 0;
-  padding-top: 400px;
+  /* opacity: 0;
+  padding-top: 400px; */
   display: block;
 }
 
@@ -279,7 +280,7 @@ p.aboutUs{
 
 .boxImg{
   width: 100%;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 h1.Archive{

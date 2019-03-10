@@ -79,59 +79,58 @@
 
 
     <script>
-    function animateWork(el) {
-        var windowHeight = jQuery( window ).height();
-        $(el).each(function(){
-            var thisPos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (topOfWindow + windowHeight - 10 > thisPos ) {
-                // $(this).animate({opacity : 1}, 1000);
-                $(this).fadeTo(1000,1).animate({
-                           'padding-top': '-=50px'
-                         }, {duration: 700, queue: false}, function() {
-                       });
-            }
-        });
-    }
-
-    function animateImage(el) {
-        var windowHeight = jQuery( window ).height();
-        $(el).each(function(){
-            var thisPos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (topOfWindow + windowHeight - 10 > thisPos ) {
-                // $(this).animate({opacity : 1}, 1000);
-                $(this).fadeTo(100,1).animate({
-                           'padding-top': '-=400px'
-                         }, {duration: 700, queue: false}, function() {
-                       });
-            }
-        });
-    }
-
-    if($(window).scrollTop() >= 300 ){
-         $('.workTitle').css("opacity", "1");
-         $('.workAuthor').css("opacity", "1");
-         $('.workImage').css("opacity", "1");
-         $('.workTitle').css("padding-top", "0px");
-         $('.workAuthor').css("padding-top", "0px");
-         $('.workImage').css("padding-top", "0px");
-    }
-    else {
-      $(document).ready(function(){
-          animateWork('.workTitle, .workAuthor');
-      });
-      $(document).ready(function(){
-        setTimeout(function(){ animateImage('.workImage');}, 650);
-      });
-      $(document).scroll(function(){
-          animateWork('.workTitle, .workAuthor');
-      });
-      $(document).scroll(function(){
-        setTimeout(function(){ animateImage('.workImage');}, 0);
-      });
-    }
-
+    // function animateWork(el) {
+    //     var windowHeight = jQuery( window ).height();
+    //     $(el).each(function(){
+    //         var thisPos = $(this).offset().top;
+    //         var topOfWindow = $(window).scrollTop();
+    //         if (topOfWindow + windowHeight - 10 > thisPos ) {
+    //             // $(this).animate({opacity : 1}, 1000);
+    //             $(this).fadeTo(1000,1).animate({
+    //                        'padding-top': '-=50px'
+    //                      }, {duration: 700, queue: false}, function() {
+    //                    });
+    //         }
+    //     });
+    // }
+    //
+    // function animateImage(el) {
+    //     var windowHeight = jQuery( window ).height();
+    //     $(el).each(function(){
+    //         var thisPos = $(this).offset().top;
+    //         var topOfWindow = $(window).scrollTop();
+    //         if (topOfWindow + windowHeight - 10 > thisPos ) {
+    //             // $(this).animate({opacity : 1}, 1000);
+    //             $(this).fadeTo(100,1).animate({
+    //                        'padding-top': '-=400px'
+    //                      }, {duration: 700, queue: false}, function() {
+    //                    });
+    //         }
+    //     });
+    // }
+    //
+    // if($(window).scrollTop() >= 300 ){
+    //      $('.workTitle').css("opacity", "1");
+    //      $('.workAuthor').css("opacity", "1");
+    //      $('.workImage').css("opacity", "1");
+    //      $('.workTitle').css("padding-top", "0px");
+    //      $('.workAuthor').css("padding-top", "0px");
+    //      $('.workImage').css("padding-top", "0px");
+    // }
+    // else {
+    //   $(document).ready(function(){
+    //       animateWork('.workTitle, .workAuthor');
+    //   });
+    //   $(document).ready(function(){
+    //     setTimeout(function(){ animateImage('.workImage');}, 650);
+    //   });
+    //   $(document).scroll(function(){
+    //       animateWork('.workTitle, .workAuthor');
+    //   });
+    //   $(document).scroll(function(){
+    //     setTimeout(function(){ animateImage('.workImage');}, 0);
+    //   });
+    // }
     </script>
 
   </body>
