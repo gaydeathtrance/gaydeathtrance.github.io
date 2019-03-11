@@ -342,6 +342,22 @@ a.noFlash:hover {
 }
 
 
+
+
+.howto{
+  margin: 3em 4em;
+}
+
+.howto h1{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.howto h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 @media only screen and (max-device-width: 1000px) {
   .logo{
     font-size: 10em;
@@ -429,6 +445,9 @@ a.noFlash:hover {
     width: 100vw;
     bottom: 2em;
     display: none;
+  }
+  .howto{
+    margin: 2em 12px;
   }
 
 }
