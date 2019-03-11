@@ -40,25 +40,123 @@
 <h1>Add the Image</h1>
 
 <ol>
-<li>Find the image that you want to accompany the piece</li>
-<li>You'll have to type the name of the file a few times, so I would rename the image to have a small, memorable name</li>
-<li>Add this image to the folder "images"</li>
-
+<li>Find the image that you want to accompany the piece.</li>
+<li>You'll have to type the name of the file a few times, so I would rename the image to have a small, memorable name.</li>
+<li>Add this image to the folder "images".</li>
 </ol>
 
-<h1>Create the Page</h1>
+<h1>Editing the Author Page</h1>
 <h2>A) For Authors Without a Page</h2>
+With the image all set we're ready to make the page for the new author and the page for their work.
+
+<ol>
+<li>Duplicate the folder "author_name". Name it after the author. Generally I say use all lowercase, but for you and BM I have used capitals and just the initals.</li>
+<li>Now it's time to make the author's page which is the "index.html" in their folder.</li>
+<li>Open "index.html" and press cmd+F.</li>
+<li>Find "Author Name" and replace all with the author's name.</li>
+<li>Scroll down to the link. All you need to do is change "Work Name" with the title of the piece.</li>
+</ol>
 
 <h2>B) For Authors With a Page</h2>
+<ol>
+  <li>Go to the folder of the author who has a new piece.</li>
+  <li>Duplicate the file "template.html" file and call it "number.html" where "number" is the next number along.</li>
+  <li>Open "index.html" and scroll to the links. I have added a template link in a comment.</li>
+  <li>Copy this link and paste it below the current links. Replace "number.html" with the correct number (the page you just created).</li>
+  <li>Replace "Work Name" of this new link with the title of the piece.</li>
+</ol>
 
-<h1>Formatting the Work</h1>
+
+<h1>Adding New Work</h1>
+<ol>
+  <li>Open the file for the new work. If this is the author's first piece, that'll be "1.html". If it's not, you'll be opening your most recent "number.html".</li>
+  <li>Press cmd+F</li>
+  <ul>
+    <li>Search "Author Name" and replace all with the author's name.</li>
+    <li>Search "Work Name" and replace all with the Work's title.</li>
+    <li>Search "imagename.jpg" and replace all with the image's name.</li>
+      &nbsp; <b>Note</b>: when you replace that make sure you include .jpg with the replace all. If you're using a png then replace the "imagename.jpg" with yourimage.png. You get the idea.
+  </ul>
+  <li>Paste in the work. This goes in between &#x3C;p class="workBody"> ... insert here ... &#x3C;/p>. (More details below.) </li>
+  <li>The author's name will already be in the bio, but make sure you add the rest of it after the &#x3C;b> Name &#x3C;/b>.</li>
+  <li>Fill in the image credits.</li>
+</ol>
+
+<h1>Formatting the work</h1>
+<ul>
+  <li>Every new line must have a &#x3C;br>. Neat trick using atom, if you type "br" and press enter, it'll add the brackets for you.</li>
+  <ul>
+    <li>If you want to do that trick with text edit, open "textEdit" and press cmd+F</li>
+    <li>Click the magnifying glass and press "insert pattern" and choose "line break"</li>
+    <li>Copy the line break and paste it into the "replace"</li>
+    <li>Replace all "line breaks" with "&#x3C;br>line break" </li>
+  </ul>
+  <li>To make text bold: surround it by &#x3C;b>Bold&#x3C;/b> = <b>Bold</b></li>
+  <li>To make text Italic: surround it by &#x3C;i>Italic&#x3C;/i> = <i>Italic</i></li>
+  <li>To make text underline: surround it by &#x3C;u>Underline&#x3C;/s> = <u>Underline</u></li>
+  <li>To make text strikethrough: surround it by &#x3C;s>Strikethrough&#x3C;/s> = <s>Strikethrough</s></li>
+  <li>To add an emdash, sometimes it's easiest to just replace all double dashes with "&#x26;mdash;"</li>
+</ul>
 
 <h1>Adding to Front Page</h1>
 <h2>A) Add Piece to Feature</h2>
+If you want to add the newest piece to the feature then we have to do two things. Move the current piece into the archive and add the newest one to the featured work. First lets put the older piece into the archive.
+
+<ol>
+<li>Open "index.html" in the main folder. Scroll down until you see "COPY THE BELOW LINES".</li>
+<li>Copy that part, and paste below my comment.</li>
+<li>There are three lines that you need to change:</li>
+<ol>
+  <li>The first line replace "AUTHOR/number.html" with the right information for what used to be featured. If you're not sure, that link will be in the currently featured bit. Also replace "imagename.jpg" with the image from the previously feautred piece.</li>
+  <li>Now you're editing &#x3C;a href="author/number.html">WORK TITLE&#x3C;/a>, replacing "author/number.html" with the same info you did above, and the "WORK TITLE" with the title.</li>
+  <li>This is the link to the author page. Edit &#x3C;a href="author/index.html">AUTHOR NAME&#x3C;/a> replace "author" with the folder name for that author and "AUTHOR NAME" with their full name.</li>
+</ol>
+
+<li>Now we're going to add the page you just made to the featured part. Scroll up until you see "EDIT THIS TO CHANGE FEATURED CONTENT".</li>
+<li>Just like above there are three lines to change.</li>
+<ol>
+  <li>First line: change the work link "author/number.html" and the image link "images/imagename.jpg"</li>
+  <li>Second line: change the work link "author/number.html"</li>
+  <li>Third Line change the author link "author/index.html"</li>
+</ol>
+</ol>
+
 
 <h2>B) Add Piece Straight to Archive</h2>
+If you want to keep the current piece in featured and add the newest piece to the archive then just do this:
+<ol>
+<li>Open "index.html" in the main folder. Scroll down until you see "COPY THE BELOW LINES".</li>
+<li>Copy that part, and paste below my comment.</li>
+<li>There are three lines that you need to change:</li>
+<ol>
+  <li>The first line replace "AUTHOR/number.html" with the file you just made. Also replace "imagename.jpg" with the image you just added.</li>
+  <li>Now you're editing &#x3C;a href="author/number.html">WORK TITLE&#x3C;/a>, replacing "author/number.html" with the same info you did above, and the "WORK TITLE" with the title.</li>
+  <li>This is the link to the author page. Edit &#x3C;a href="author/index.html">AUTHOR NAME&#x3C;/a> replace "author" with the folder name for that author and "AUTHOR NAME" with their full name.</li>
+</ol>
+<li>Done!</li>
+</ol>
+
+<h1>Check Everything</h1>
+<ol>
+  <li>Open the "index.html" using Chrome</li>
+  <li>Does everything look ok?</li>
+  <li>Now try clicking the image, the work title and the author's name</li>
+  <li>The image and the work title should take you to the piece. Does it?</li>
+  <li>The author's name should take you to the author's page. Does it?</li>
+  <li>Author's page should have the new work on it. Does it?</li>
+  <li>Is the work formatted the way it was sent? Might need to add / remove line breaks to be happy.</li>
+</ol>
+
+<h1>Upload</h1>
+<ol>
+  <li>Open "Github Desktop" and push the changes.</li>
+  <li>If I've made changes, you may need to pull first.</li>
+</ol>
+
+<h1 style="text-align: center; padding: 2em;">You're now a web developer.</h1>
 
 </div>
+
 
   </body>
 </html>
