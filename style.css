@@ -343,6 +343,10 @@ a.noFlash:hover {
 
 
 
+.imgWrapper{
+  margin: 2em;
+  text-align: center;
+}
 
 .howto{
   margin: 3em 4em;
@@ -368,6 +372,17 @@ a.noFlash:hover {
 }
 
 @media only screen and (max-device-width: 500px) {
+
+  .imgWrapper{
+    margin: 0em;
+  }
+
+  .imgWrapper img{
+    max-width: 100%!important;
+  }
+
+
+
   .logo{
     font-size: 8em;
   }
